@@ -16,8 +16,9 @@ estimate.causalTree <- function(object, data, weights, treatment, na.action = na
                          weights = w, xlev = attr(object, "xlevels"))
     }
     
-    if (!is.null(cl <- attr(Terms, "dataClasses")))
-        .checkMFClasses(cl, m, TRUE)
+  cat("Victoire!!!n")
+  # if (!is.null(cl <- attr(Terms, "dataClasses")))
+  #   .checkMFClasses(cl, m, TRUE)
     
     treatment <- m$`(treatment)`
     n <- nrow(m)
